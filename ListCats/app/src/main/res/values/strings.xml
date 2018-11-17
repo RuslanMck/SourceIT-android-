@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CatsList</string>
+
+    <string-array name="cats">
+        <item>Bobby</item>
+        <item>Abby</item>
+    </string-array>
+</resources>
+
