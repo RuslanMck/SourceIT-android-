@@ -17,14 +17,12 @@ import ua.sourceit.catslist.model.Cat;
 
 public class CatActivity extends AppCompatActivity {
 
-
     @Override
     public void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_cat);
 
-
-        List<Cat> catList = new ArrayList<>();//!!!!!!!!!!
+        final List<Cat> catList = new ArrayList<>();
 
         catList.add(new Cat("Bobby", 3, "Abyssinian"));
         catList.add(new Cat("Abby", 8, "Exotic Shorthair"));
@@ -40,26 +38,16 @@ public class CatActivity extends AppCompatActivity {
         catList.add(new Cat("Boy", 12, "Abyssinian"));
         catList.add(new Cat("Mathilda", 9, "Turkish Angora"));
 
-        String[] stringArray = getResources().getStringArray(R.array.cats);
-
         final ListView listView = findViewById(R.id.listViewCat);
         final CatListAdapter catListAdapter = new CatListAdapter(this, catList);
         listView.setAdapter(catListAdapter);
-
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Cat cat = catListAdapter.getItem(position);
-//                Toast.makeText(view.getContext(),"Кот " + cat.getName(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                DescriptionActivity.catBreed = catListAdapter.getItem(position).getBreed();
                 Intent intent = new Intent(CatActivity.this, DescriptionActivity.class);
-                intent.putExtra(DescriptionActivity.CAT_ID, (int) id);
-//                intent.putExtra("CatName", listView.getItemAtPosition(position).toString());
+                intent.putExtra(DescriptionActivity.catBreed, catListAdapter.getItem(position).getBreed());
                 startActivity(intent);
             }
         });

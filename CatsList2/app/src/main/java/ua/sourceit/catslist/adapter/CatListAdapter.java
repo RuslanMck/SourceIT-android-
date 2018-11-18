@@ -22,13 +22,11 @@ public class CatListAdapter extends ArrayAdapter<Cat> {
         super(context, 0, catList);
         /** .from метод LayoutInflater'а. context обозначает что он получает возможность изменять параметры внешнего вида при создании **/
         layoutInflater = LayoutInflater.from(context);
-
     }
     /** Мы переопределяем getView поэтоу передаваемые параметры нужно указать родительские.
      * position отвечает за позицию в создаввемом списке. convertView используется для переиспользования созданного view **/
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
 
         View view;
 
@@ -49,6 +47,4 @@ public class CatListAdapter extends ArrayAdapter<Cat> {
 
         return view;
     }
-
-
 }
