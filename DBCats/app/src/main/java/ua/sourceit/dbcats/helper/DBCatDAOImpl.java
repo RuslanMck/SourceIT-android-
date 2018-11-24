@@ -22,18 +22,23 @@ public class DBCatDAOImpl implements CatDataAccessObject {
     }
 
     @Override
-    public void insertCat(Cat cat) {
+    public boolean insertCat(Cat cat) {
         ContentValues values = new ContentValues();
         values.put(Cat.COLUMN_NAME, cat.getName());
         values.put(Cat.COLUMN_AGE, cat.getAge());
         values.put(Cat.COLUMN_BREED, cat.getBreed());
 
         SQLiteDatabase writableDatabase = databaseHelper.getWritableDatabase();
-        writableDatabase.insert(Cat.TABLE_NAME, null, values);
+        long result = writableDatabase.insert(Cat.TABLE_NAME, null, values);
+        if (result == -1){
+            return false;
+        } else {
+            return true;
+        }
     }
 
     @Override
-    public List<Cat> getAll() {
+    public int getAll() {
         SQLiteDatabase readableDatabase = databaseHelper.getReadableDatabase();
         Cursor cursor = readableDatabase.query(Cat.TABLE_NAME,null, null, null, null, null,null);
 
@@ -54,6 +59,6 @@ public class DBCatDAOImpl implements CatDataAccessObject {
             }
             cursor.close();
         }
-        return null;
+        return catList.size();
     }
 }
