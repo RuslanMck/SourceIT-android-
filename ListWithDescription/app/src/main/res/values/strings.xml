@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Cats list</string>
+    <string name="descr_act_name">Cat description</string>
+
+    <string name="breed_abyssinian"> The Abyssinian </string>
+    <string name="decr_abyssinian">The Abyssinian is a slender, fine-boned, medium-sized cat. The
+        head is moderately wedge shaped, with a slight break at the muzzle, and nose and chin
+        ideally forming a straight vertical line when viewed in profile. They have alert,
+        relatively large pointed ears.  </string>
+
+    <string name="breed_exotic_shorthair"> Exotic Shorthair </string>
+    <string name="descr_exotic_shorthair"> Exotic Shorthairs have a gentle and calm personality
+        reminiscent of the Persian, but are generally livelier than their longhaired ancestors.
+        Curious and playful, they are friendly to other cats and dogs, but they dont like being
+        left alone and need the presence of their owner. They tend to show more affection and
+        loyalty than most breeds and make excellent lap cats.</string>
+
+    <string name="breed_the_korat">The Korat</string>
+    <string name="descr_the_korat">The Korats unusual colour is actually a silver-tipped blue that
+        appears to shimmer. The Thais refer to this colour as rain-cloud grey, and the shimmer as
+        sea foam. This cat has a single coat that is short, with roots of a lighter silver blue.
+        The hair shaft colour increases to deeper blue and the tips are silver, especially on the
+        muzzle and toes. This is the only colour accepted for a Korat.</string>
+
+    <string name="breed_ocicat">Ocicat</string>
+    <string name="descr_ocicat">The devoted and playful Ocicat loves people and will trail their
+        footsteps through the house or ride on a shoulder. Guests are welcomed by this generally
+        social cat as new opportunities for petting or lap sitting. Ocicats don’t even mind being
+        carried around as long as they are with you. As with any animal, they come in a range of
+        personalities, so some are more shy than others. Favorite activities include retrieving
+        toys and learning to walk on a leash. Ocicats are highly intelligent and learn tricks easily.
+    </string>
+
+    <string name="breed_laPerm">LaPerm</string>
+    <string name="descr_laPerm">The clever LaPerm has a sense of humor. Often described as clownish,
+        he is something of a mischief-maker who makes talented use of his paws to open doors, swipe
+        things he wants or tap you on the shoulder for attention. He’s not clingy, but he likes to
+        be with you and will follow you around, sit on your shoulder or the top of your computer,
+        or sit in your lap, whichever option is most convenient for him. He is moderately active
+        and enjoys retrieving items that are thrown for him.
+    </string>
+
+    <string name="breed_russian_white">Russian White</string>
+    <string name="descr_russian_white">Russian White Cats are a medium sized breed of domestic cats.
+        Russian white cats are delicate and elegant cat and have been a woman’s classy cat since
+        decades. Russian White cats were bred in the 1970’s from Russian Blue Cats. These cats live
+        a long life of 15 years. These cats are available in white, black and chocolate color.
+    </string>
+
+    <string name="breed_japanese_bobtail">Japanese Bobtail</string>
+    <string name="descr_japanese_bobtail">This active and affectionate cat will “talk” to you in a
+        soft, chirpy voice. You will be amazed by the range of his feline vocabulary. He’s not loud
+        at all, but he does have a lot to say and a range of tones in which to say it. When he’s
+        not telling you about his day or asking about yours, he is very likely carrying around a
+        favorite toy or splashing his paw into your koi pond or aquarium. He likes playing with
+        water, so you may find your faucets turned on or puddles beside his water dish.
+    </string>
+
+    <string name="breed_serrade_petit">Serrade Petit</string>
+    <string name="descr_serrade_petit">Serrade Petit is a cute, little cat that is known for its
+        attention seeking nature. It is slightly active and love to indulge in a lot of jumping and
+        running around. At the same time, it does not mind lazying around when it feels like.
+        Moreover, it is very important that to ensure their proper health, they are allowed to
+        exercise a little. Since they love a lot of attention, when the owners participate in a
+        variety of activities with them, the cats love all the adoring and undivided attention.
+    </string>
+
+    <string name="breed_york_chocolate">York Chocolate</string>
+    <string name="descr_york_chocolate">A hardy and athletic farm cat in structure and appearance,
+        the York Chocolate is both handsome and distinctive, boasting nimble legs, a heavy carriage,
+        wide-spaced, round-tipped ears, bright eyes in green, hazel or amber, a plumed tail and
+        semi-longhaired coat. The coat should either be solid chocolate brown, bicolour chocolate
+        and white or bicolour chocolate and lilac, darkening as the cat matures from a kitten.
+    </string>
+
+    <string name="breed_russian_blue">Russian Blue</string>
+    <string name="descr_russian_blue">The Russian Blue has a reputation as a gentle, quiet cat,
+        somewhat shy, but don’t get the wrong idea. This cat may have a reserved nature, but he
+        loves to play (being especially fond of retrieving) and enjoys jumping or climbing to high
+        places where he can study people and situations at his leisure before making up his mind
+        about whether he wants to get involved.
+    </string>
+
+    <string name="breed_turkish_angora">Turkish Angora</string>
+    <string name="descr_turkish_angora">Beautiful and elegant on the surface, the Turkish Angora
+        can surprise an unsuspecting owner with his athleticism and intelligence. No bookcase is
+        too high for him to reach the top, and no closed door is safe from being opened by his
+        questing paws. While he certainly can have lovely manners, the Turkey, as he is sometimes
+        nicknamed, has an active, boisterous side to his nature, with a cleverness that makes him
+        endlessly entertaining. He likes to play and will do whatever is necessary to get and keep
+        your attention, even if it means getting into a little trouble.
+    </string>
+</resources>

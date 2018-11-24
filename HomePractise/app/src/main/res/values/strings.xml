@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HomePractise</string>
+    <string name="main_act_name">Main Activity</string>
+    <string name="sce_act_name">Second Activity</string>
+</resources>

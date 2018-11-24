@@ -1,11 +1,14 @@
 package ua.sourceit.catslist;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -18,7 +21,7 @@ import ua.sourceit.catslist.model.Cat;
 public class CatActivity extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle saveInstanceState){
+    public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_cat);
 
@@ -49,7 +52,33 @@ public class CatActivity extends AppCompatActivity {
                 Intent intent = new Intent(CatActivity.this, DescriptionActivity.class);
                 intent.putExtra(DescriptionActivity.catBreed, catListAdapter.getItem(position).getBreed());
                 startActivity(intent);
+//                startActivityForResult(intent, 1001);
             }
         });
+
+//        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick (View v){
+//
+//                Intent intent = new Intent(CatActivity.this, DetailActivity.class);
+//                intent.putExtra("name", "My name");
+//                intent.putExtra("age", 24);
+//                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+//                startActivityForResult(intent,1001);
+//            }
+//        });
+//    }
+//
+//    //!!!!!Флаги Intent
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == 1001 && resultCode == Activity.RESULT_OK){
+//            if (data != null){
+//                String nameResult = data.getStringExtra("nameResult");
+//                ((TextView)findViewById(R.id.button)).setText(nameResult);
+//            }
+//        }
     }
 }

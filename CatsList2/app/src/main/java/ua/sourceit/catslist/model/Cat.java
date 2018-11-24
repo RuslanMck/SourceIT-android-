@@ -1,6 +1,8 @@
 package ua.sourceit.catslist.model;
 
-public class Cat {
+import android.provider.BaseColumns;
+
+public class Cat implements BaseColumns {
     private String name;
     private int age;
     private String breed;
