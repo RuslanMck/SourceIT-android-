@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">SourceItSample</string>
+    <string name="hello">Hello world</string>
+
+    <string-array name="cats">
+        <item>Vasia</item>
+    </string-array>
+</resources>

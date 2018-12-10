@@ -1,10 +1,14 @@
 package ua.sourceit.dbcats.helper;
 
+import java.util.List;
+
 import ua.sourceit.dbcats.model.Cat;
 
 public interface CatDataAccessObject {
 
     boolean insertCat(Cat cat);
 
-    int getAll();
+    int getSize();
+
+    List<Cat> getAll();
 }

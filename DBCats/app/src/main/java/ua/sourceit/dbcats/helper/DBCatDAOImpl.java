@@ -15,7 +15,7 @@ public class DBCatDAOImpl implements CatDataAccessObject {
     private DatabaseHelper databaseHelper;
     private Context context;
 
-    public DBCatDAOImpl(Context context){
+    public DBCatDAOImpl(Context context) {
         this.context = context;
 
         databaseHelper = new DatabaseHelper(context);
@@ -30,7 +30,7 @@ public class DBCatDAOImpl implements CatDataAccessObject {
 
         SQLiteDatabase writableDatabase = databaseHelper.getWritableDatabase();
         long result = writableDatabase.insert(Cat.TABLE_NAME, null, values);
-        if (result == -1){
+        if (result == -1) {
             return false;
         } else {
             return true;
@@ -38,17 +38,29 @@ public class DBCatDAOImpl implements CatDataAccessObject {
     }
 
     @Override
-    public int getAll() {
+    public int getSize() {
+        List<Cat> cats = getAll();
+        if (cats != null){
+            return cats.size();
+        } else {
+            return 0;
+        }
+    }
+
+    @Override
+    public List<Cat> getAll() {
         SQLiteDatabase readableDatabase = databaseHelper.getReadableDatabase();
-        Cursor cursor = readableDatabase.query(Cat.TABLE_NAME,null, null, null, null, null,null);
+        Cursor cursor = readableDatabase.query(Cat.TABLE_NAME, null, null, null, null, null, null);
 
         List<Cat> catList = new ArrayList<>();
 
-        if (cursor != null && cursor.getCount() > 0){
+        if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
 
             int count = cursor.getCount();
-            for (int i = 0; i < count; i++){
+
+            for (int i = 0; i < count; i++) {
+
                 String name = cursor.getString(cursor.getColumnIndex(Cat.COLUMN_NAME));
                 int age = cursor.getInt(cursor.getColumnIndex(Cat.COLUMN_AGE));
                 String breed = cursor.getString(cursor.getColumnIndex(Cat.COLUMN_BREED));
@@ -59,6 +71,6 @@ public class DBCatDAOImpl implements CatDataAccessObject {
             }
             cursor.close();
         }
-        return catList.size();
+        return catList;
     }
 }

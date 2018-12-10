@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Слава Украине</string>
+
+    <string-array name="cats">
+        <item>Василь</item>
+    </string-array>
+</resources>
