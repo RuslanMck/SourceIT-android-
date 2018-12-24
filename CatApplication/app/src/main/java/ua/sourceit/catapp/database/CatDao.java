@@ -5,6 +5,8 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.database.Cursor;
 
+import java.util.List;
+
 import ua.sourceit.catapp.model.Cat;
 
 /** Указываем какие действия мы будем произволить с нашей базой данных
@@ -21,11 +23,10 @@ public interface CatDao {
     Cursor getAll();
 
     @Insert
-    void insertCat (Cat cat);
+    void insertCat (List<Cat> catList);
 
     @Query("select * from Cat where id=:catId")
     Cat getCat(int catId);
 
-    // Реализовать класс CatDatabase и в main получить ссылку на RecyclerView
 
 }

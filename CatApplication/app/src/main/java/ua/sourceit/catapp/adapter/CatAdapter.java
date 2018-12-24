@@ -2,12 +2,16 @@ package ua.sourceit.catapp.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -73,5 +77,13 @@ public class CatAdapter extends CursorAdapter {
                 }
             }
         });
+    }
+    /** Создаем метод для парсинга картинки
+     * @BindingAdapter("app:loadImageUrl") - тэг который будет вставляться в xml файл, по этому
+     * тегу адапрер будет понимать куда конкретно вставлять картинку**/
+
+    @BindingAdapter("app:loadImageUrl")
+    public static void setImageUrl(ImageView imageView, String url){
+        Picasso.with(imageView.getContext()).load(url).into(imageView);
     }
 }
