@@ -20,6 +20,7 @@ import exam.catapp.sourceit.catapplication.network.CatLoadingListener;
 import exam.catapp.sourceit.catapplication.network.LoadAsyncTask;
 
 public class MainActivity extends AppCompatActivity implements CatLoadingListener {
+    //asdasd
 
     RecyclerView recyclerView;
 
