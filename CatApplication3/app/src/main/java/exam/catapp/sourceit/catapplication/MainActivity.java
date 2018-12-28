@@ -20,11 +20,10 @@ import exam.catapp.sourceit.catapplication.network.CatLoadingListener;
 import exam.catapp.sourceit.catapplication.network.LoadAsyncTask;
 
 public class MainActivity extends AppCompatActivity implements CatLoadingListener {
-    //asdasdzdfs
 
     RecyclerView recyclerView;
 
-    TextView emptyView;
+    View emptyView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
